@@ -11,7 +11,7 @@
 export default {
   data() {
     return {
-      title: 'guet--z',
+      title: 'guet---z',
     }
   },
   onLoad() {},
