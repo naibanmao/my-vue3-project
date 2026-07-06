@@ -1,18 +1,48 @@
 <template>
-  <view class="container">
-    <view class="header">首页</view>
-    <view class="content">
-      <text>欢迎来到移动商城首页！</text>
+  <view class="content">
+    <image class="logo" src="/static/logo.png"></image>
+    <view class="text-area">
+      <text class="title">{{ title }}</text>
     </view>
   </view>
 </template>
 
-<script setup lang="ts">
-// 逻辑层代码
+<script>
+export default {
+  data() {
+    return {
+      title: 'guet',
+    }
+  },
+  onLoad() {},
+  methods: {},
+}
 </script>
 
-<style scoped>
-.container { padding: 20px; }
-.header { font-size: 24px; font-weight: bold; margin-bottom: 20px; color: #333; }
-.content { color: #666; font-size: 16px; }
+<style>
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 200rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50rpx;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
 </style>
